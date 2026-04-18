@@ -1,4 +1,4 @@
-﻿pipeline {
+pipeline {
     agent any
 
     environment {
@@ -37,6 +37,14 @@
                         error("❌ Node count is ${nodeCount}, expected 3")
                     }
                     echo "✅ Node count is 3"
+                }
+            }
+        }
+
+        stage('Check Security') {
+            steps {
+                script {
+                    echo "⚠️ Security check skipped for now"
                 }
             }
         }
