@@ -29,3 +29,27 @@ devops-lab/
 ├── main.tf
 ├── README.md
 └── tf-status.txt (auto-generated)
+
+
+## 🧪 Sample Pipeline Output
+✅ Code checked out
+✅ Terraform init
+✅ Terraform validate passed
+✅ Node count is 3
+✅ Basic security check passed
+✅ Status pushed to GitHub
+🎉 Terraform validation pipeline SUCCESS!
+
+
+## 🔧 How to Reproduce
+1. Clone this repository
+2. Set up Jenkins with Terraform and GitHub credentials
+3. Create a pipeline pointing to this Jenkinsfile
+4. Run the pipeline
+
+## 📬 Contact
+**Ghemarc "Mark" Dela Cruz**  
+[LinkedIn](https://linkedin.com/in/yourprofile) | [GitHub](https://github.com/Ghemarc-star)
+
+---
+*This project is part of my DevOps portfolio.*
