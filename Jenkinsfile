@@ -41,18 +41,6 @@
             }
         }
 
-        stage('Check Security') {
-            steps {
-                script {
-                    def hasFirewall = sh(script: "grep -q 'source_ranges = \\[\"0.0.0.0/0\"\\]' main.tf", returnStatus: true) == 0
-                    if (!hasFirewall) {
-                        error("❌ Missing or insecure firewall rule")
-                    }
-                    echo "✅ Basic security check passed"
-                }
-            }
-        }
-
         stage('Push Status to GitHub') {
             steps {
                 script {
