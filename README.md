@@ -24,3 +24,8 @@ This project demonstrates an automated CI/CD pipeline that validates Terraform i
 - Automates infrastructure review
 
 ## 📂 Repository Structure
+devops-lab/
+├── Jenkinsfile
+├── main.tf
+├── README.md
+└── tf-status.txt (auto-generated)
